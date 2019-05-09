@@ -163,14 +163,26 @@
         <div class="carousel-inner">
             <div class="item active">
                 <img src="/images/background.jpg" alt="Los Angeles"  class=" ">
+                <div class="carousel-caption">
+                    <h3>“As long as everybody is videotaping everybody else, justice will be done.”</h3>
+
+                </div>
             </div>
 
             <div class="item">
                 <img src="/images/backgraound1.jpg" alt="Chicago"   class="">
+                <div class="carousel-caption">
+                    <h3>Sheldon: "That's no reason to cry. One cries because one is sad. For example, I cry because others are stupid, and that makes me sad."</h3>
+
+                </div>
             </div>
 
             <div class="item">
                 <img src="/images/background2.jpg" alt="New york"  class=" ">
+                <div class="carousel-caption">
+                    <h3>“Any man who must say, ‘I am the king,’ is no true king. I’ll make sure you understand that when I’ve won your war for you.”</h3>
+
+                </div>
             </div>
         </div>
 
