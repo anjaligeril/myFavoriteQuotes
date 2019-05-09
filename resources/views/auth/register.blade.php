@@ -166,8 +166,8 @@
     </nav>
     <div class="container1">
         <div class="row justify-content-center">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
 
                 <div class="card">
                     <div class="card-header">{{ __('Register') }}</div>
@@ -228,7 +228,7 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary btn-lg">
                                         {{ __('Register') }}
                                     </button>
                                 </div>
@@ -238,7 +238,7 @@
                 </div>
                     </div>
                 </div>
-        <div class="col-lg-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
             </div>
         </div>
     </div>

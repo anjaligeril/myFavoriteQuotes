@@ -134,6 +134,7 @@ main{
             background-color: white;
             margin-top: 50px;
             border-radius: 10px;
+            height:400px;
         }
         .cardImage{
             height: 200px;

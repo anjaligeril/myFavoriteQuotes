@@ -25,7 +25,7 @@
 
         html, body {
 
-            background-color: grey;
+            background-color: #4dd0e1;
             font-family: "Playfair Display", Georgia, serif;
             font-weight: 200;
             height: 100%;
@@ -111,6 +111,10 @@ text-decoration: none !important;
             font-size:24px;
             margin-bottom: 10px;
         }
+
+        .btn{
+            margin-left: 200px;
+        }
     </style>
 </head>
 <body>
@@ -165,8 +169,8 @@ text-decoration: none !important;
     </nav>
     <div class="container1">
         <div class="row justify-content-center">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
                 <div class="card">
                     <div class="card-header">{{ __('Login') }}</div>
 
@@ -202,29 +206,15 @@ text-decoration: none !important;
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                        <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary btn-lg ">
                                         {{ __('Login') }}
                                     </button>
 
-                                    @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Your Password?') }}
-                                        </a>
-                                    @endif
+
                                 </div>
                             </div>
                         </form>
@@ -232,7 +222,7 @@ text-decoration: none !important;
                 </div>
             </div>
         </div>
-        <div class="col-lg-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
     </div>
 
     <footer class="text-center">

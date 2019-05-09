@@ -41,7 +41,7 @@
             @else
                 <div class="row1">
                     <div class="search">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="panel panel-info">
                             <div class="panel-heading"><h3>Add your favorite quotes</h3></div>
                             <div class="panel-body">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="panel panel-warning">
                             <div class="panel-heading"><h3>Search for your favorite quotes</h3></div>
                             <div class="panel-body">
