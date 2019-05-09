@@ -67,13 +67,18 @@
                     </div>
                     <h2 class="text-center" style="color:white;">List of All Favorite Quotes</h2>
                     <div class="row  ">
+                        <?php
+                        $id = array(0,1,10,100,1000,1001,1002,1003,1004,1005,1006,1008,1009,101,1010,1011,1012,1013);
+                        $idIndex = array_rand($id);
+                        $idValue=$id[$idIndex];
+                        ?>
                         @if(isset($_GET['detail']))
                         @foreach($allQuotes as $singleQuote)
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 " >
                                 <div class="card " >
 
                                     <div class="card-body">
-                                        <img class="img-thumbnail cardImage" src="{{$singleQuote->Image}}" alt="Card image" >
+                                        <img class="img-thumbnail cardImage" src="https://picsum.photos/id/{{$idValue}}/200" alt="Card image" >
                                         <p class="text-justify quotes"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
                                         <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal2">View Details</a>
                                         <a href="" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal1">Update</a>
@@ -86,9 +91,13 @@
                             @foreach($allQuotes as $singleQuote)
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 " >
                                     <div class="card " >
-
+                                        <?php
+                                        $id = array(0,1,10,100,1000,1001,1002,1003,1004,1005,1006,1008,1009,101,1010,1011,1012,1013);
+                                        $idIndex = array_rand($id);
+                                        $idValue=$id[$idIndex];
+                                        ?>
                                         <div class="card-body">
-                                            <img class="img-thumbnail cardImage" src="{{$singleQuote->Image}}" alt="Card image" >
+                                            <img class="img-thumbnail cardImage" src="https://picsum.photos/id/{{$idValue}}/200" alt="Card image" >
                                             <p class="text-justify quotes"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
                                             <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal2">View Details</a>
                                             <a href="" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal1">Update</a>
@@ -133,13 +142,7 @@
                                                     <textarea class="form-control" rows="5" name="quote">{{$singleQuote->quotes}}</textarea>
                                                 </div>
                                             </div>
-                                            <label for="quote">Images:</label>
-                                            <div class="input-group control-group increment" >
-                                                <input type="file" name="filename[]" class="form-control"  >
-                                                <div class="input-group-btn">
 
-                                                </div>
-                                            </div>
                                             <button type="submit" class="btn btn-success">Submit</button>
                                         </form>
                                     </div>
@@ -218,13 +221,7 @@
                                     </div>
                                 </div>
 
-                                <label for="quote">Images:</label>
-                                <div class="input-group control-group increment" >
-                                    <input type="file" name="filename[]" class="form-control">
-                                    <div class="input-group-btn">
 
-                                    </div>
-                                </div>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>
