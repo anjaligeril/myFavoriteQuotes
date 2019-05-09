@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f637f535-5c51-433e-aa87-d2f97c8081f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/quotesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/quotesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/quotesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="45">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding>
                 <element signature="e#39#48#0#PHP" expanded="true" />
               </folding>
@@ -57,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1720">
-              <caret line="223" column="32" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
+            <state relative-caret-position="81">
+              <caret line="70" column="166" selection-start-line="70" selection-start-column="166" selection-end-line="70" selection-end-column="166" />
               <folding>
                 <element signature="e#3023#3043#0#HTML" expanded="true" />
               </folding>
@@ -329,12 +328,12 @@
       <workItem from="1557252639585" duration="35967000" />
       <workItem from="1557353355910" duration="6046000" />
       <workItem from="1557367356365" duration="514000" />
-      <workItem from="1557368049486" duration="11645000" />
+      <workItem from="1557368049486" duration="11944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54172000" />
+    <option name="totallyTimeSpent" value="54471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -465,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/quotesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="45">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
           <folding>
             <element signature="e#39#48#0#PHP" expanded="true" />
           </folding>
@@ -475,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="223" column="32" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
+        <state relative-caret-position="81">
+          <caret line="70" column="166" selection-start-line="70" selection-start-column="166" selection-end-line="70" selection-end-column="166" />
           <folding>
             <element signature="e#3023#3043#0#HTML" expanded="true" />
           </folding>
