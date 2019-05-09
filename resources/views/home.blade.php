@@ -76,8 +76,8 @@
                                         <img class="img-thumbnail cardImage" src="{{$singleQuote->Image}}" alt="Card image" >
                                         <p class="text-justify quotes"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
                                         <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal2">View Details</a>
-                                        <a href="/deleteQuotes/{{$singleQuote->id}}" class="btn btn-danger btn-sm">Delete</a>
                                         <a href="" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal1">Update</a>
+                                        <a href="/deleteQuotes/{{$singleQuote->id}}" class="btn btn-danger btn-sm">Delete</a>
                                     </div>
                                 </div>
                             </div>
@@ -91,8 +91,8 @@
                                             <img class="img-thumbnail cardImage" src="{{$singleQuote->Image}}" alt="Card image" >
                                             <p class="text-justify quotes"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
                                             <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal2">View Details</a>
-                                            <a href="/deleteQuotes/{{$singleQuote->id}}" class="btn btn-danger btn-sm">Delete</a>
                                             <a href="" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal1">Update</a>
+                                            <a href="/deleteQuotes/{{$singleQuote->id}}" class="btn btn-danger btn-sm">Delete</a>
                                         </div>
                                     </div>
                                 </div>
