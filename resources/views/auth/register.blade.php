@@ -46,8 +46,10 @@
             top: 18px;
         }
 
-
-
+        .button1{
+            color: white;
+            right:10px;
+        }
         /* Add a dark background color with a little bit see-through */
         .navbar {
             margin-bottom: 0;
@@ -74,13 +76,19 @@
             text-transform: uppercase;
         }
 
+        ul {
+            list-style-type: none;
+        }
         /* Add a dark background color to the footer */
         footer {
             background-color: #009faf;
             color: #f5f5f5;
             padding: 20px;
         }
-
+        .card-header{
+            font-size:24px;
+            margin-bottom: 10px;
+        }
         footer a {
             color: #f5f5f5;
         }
@@ -94,8 +102,8 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 20px;
             text-align: center;
-            font-family: arial;
-            background-color: white;
+            font-family: "Playfair Display", Georgia, serif;
+            background-color: lightcyan;
             margin-top:100px !important;
             margin-bottom:100px !important;
             border-radius: 10px;
@@ -122,7 +130,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav top-right">
+                <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">

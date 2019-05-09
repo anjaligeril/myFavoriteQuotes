@@ -16,7 +16,7 @@
 
             html, body {
 
-                background-color: grey;
+
                 font-family: "Playfair Display", Georgia, serif;
                 font-weight: 200;
                 height: 100%;
@@ -31,11 +31,6 @@
                 color:white !important;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
 
 
             /* Add a dark background color with a little bit see-through */
@@ -65,14 +60,16 @@
             }
 
 
-            .links > a {
-                color: white;
+            .links ul li a {
+                color: white !important;
                 padding: 0 25px;
                 font-size: 16px;
                 font-weight: bold;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                margin-top: 10px !important;
+
             }
 
             .carousel-inner img {
@@ -132,19 +129,24 @@
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
+
+
                 @if (Route::has('login'))
-                    <div class="top-right links">
+                    <div class=" links">
+                        <ul class="nav navbar-nav navbar-right">
                         @auth
-                            <a href="{{ url('/home') }} " >Home</a>
+                          <li><a href="{{ url('/home') }} " >Home</a></li>
                         @else
-                            <a href="{{ route('login') }} " >Login</a>
+                           <li><a href="{{ route('login') }} " >Login</a></li>
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" >Register</a>
+                              <li> <a href="{{ route('register') }}" >Register</a></li>
                             @endif
                         @endauth
+                        </ul>
                     </div>
                 @endif
+
             </div>
         </div>
     </nav>

@@ -25,7 +25,7 @@
 
         html, body {
 
-            background-color: grey;
+            background-color: #009faf;
             font-family: "Playfair Display", Georgia, serif;
             font-weight: 200;
             height: 100%;
@@ -34,7 +34,9 @@
             background-size: 100% 100%;
 
         }
-
+.addQuotes{
+    margin-top: 12px;
+}
         .navbar-brand{
             font-size:30px;
             color:white !important;
@@ -53,6 +55,12 @@ main{
     background-color: #4dd0e1;
     padding-bottom: 50px;
 
+}
+.quotes{
+    color:indigo;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 .modal-title{
     font-weight: bold;
@@ -98,7 +106,9 @@ main{
             text-decoration: none !important;
             text-transform: uppercase;
         }
-
+        ul {
+            list-style-type: none;
+        }
         /* Add a dark background color to the footer */
         footer {
             background-color: #009faf;
@@ -152,11 +162,11 @@ main{
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link navLinks" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link navLinks" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else

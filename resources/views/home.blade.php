@@ -17,21 +17,55 @@
                 {{ session('success') }}
             </div>
         @endif
-
+            @if(session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
         <div class="row">
 
             @if($allQuotes->isEmpty())
-                <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Add Quotes</button>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3>Add your favorite quotes</h3></div>
+                        <div class="panel-body">
+                            <h4>To add your favorite quotes please click on the button...</h4>
+                            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Add Quotes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+
+
             @else
                 <div class="row1">
-                    <div class="col-lg-12">
-                        <form method="POST" action="/searchQuote"enctype="multipart/form-data">
-                            {{csrf_field()}}
-                            <input style="width:50% " type="text" class="form-control" id="detail"  name="detail" placeholder="Search">
-                            <button type="submit" class="btn btn-primary"  >Search</button>
-                            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Add Quotes</button>
-                        </form>
+                    <div class="search">
+                    <div class="col-lg-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><h3>Add your favorite quotes</h3></div>
+                            <div class="panel-body">
+                                <h4>To add your favorite quotes please click on the button...</h4>
+                                <button type="button" class=" addQuotes btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">Add Quotes</button>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading"><h3>Search for your favorite quotes</h3></div>
+                            <div class="panel-body">
+                                <form method="POST" action="/searchQuote"enctype="multipart/form-data">
+                                    {{csrf_field()}}
+                                    <input style="width:90% " type="text" class="form-control" id="detail"  name="detail" placeholder="Search">
+                                    <br><button type="submit" class="btn btn-info"  >Search</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                    <h2 class="text-center" style="color:white;">List of All Favorite Quotes</h2>
                     <div class="row  ">
                         @if(isset($_GET['detail']))
                         @foreach($allQuotes as $singleQuote)
@@ -40,7 +74,7 @@
 
                                     <div class="card-body">
                                         <img class="img-thumbnail cardImage" src="{{$singleQuote->Image}}" alt="Card image" >
-                                        <p class="text-justify"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
+                                        <p class="text-justify quotes"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
                                         <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal2">View Details</a>
                                         <a href="/deleteQuotes/{{$singleQuote->id}}" class="btn btn-danger btn-sm">Delete</a>
                                         <a href="" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal1">Update</a>
@@ -55,7 +89,7 @@
 
                                         <div class="card-body">
                                             <img class="img-thumbnail cardImage" src="{{$singleQuote->Image}}" alt="Card image" >
-                                            <p class="text-justify"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
+                                            <p class="text-justify quotes"> {{ str_limit($singleQuote->quotes, $limit = 100, $end = '...') }} </p>
                                             <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal2">View Details</a>
                                             <a href="/deleteQuotes/{{$singleQuote->id}}" class="btn btn-danger btn-sm">Delete</a>
                                             <a href="" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal1">Update</a>

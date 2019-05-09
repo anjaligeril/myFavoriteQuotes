@@ -73,10 +73,12 @@
             font-size: 16px;
             font-weight: bold;
             letter-spacing: .1rem;
-text-decoration: none;
+text-decoration: none !important;
             text-transform: uppercase;
         }
-
+        ul {
+            list-style-type: none;
+        }
        /* Add a dark background color to the footer */
         footer {
             background-color: #009faf;
@@ -97,15 +99,18 @@ text-decoration: none;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 20px;
             text-align: center;
-            font-family: arial;
-            background-color: white;
+            font-family: "Playfair Display", Georgia, serif;
+            background-color: lightcyan;
             margin-top:150px !important;
             margin-bottom:150px !important;
 
             border-radius: 10px;
         }
 
-
+        .card-header{
+            font-size:24px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -113,7 +118,7 @@ text-decoration: none;
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -124,7 +129,7 @@ text-decoration: none;
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav top-right">
+                <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
