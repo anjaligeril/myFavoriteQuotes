@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f637f535-5c51-433e-aa87-d2f97c8081f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="f637f535-5c51-433e-aa87-d2f97c8081f8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,12 +326,12 @@
       <workItem from="1557252639585" duration="35967000" />
       <workItem from="1557353355910" duration="6046000" />
       <workItem from="1557367356365" duration="514000" />
-      <workItem from="1557368049486" duration="11944000" />
+      <workItem from="1557368049486" duration="12539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54471000" />
+    <option name="totallyTimeSpent" value="55066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
